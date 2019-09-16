@@ -1,0 +1,11 @@
+version: '3'
+services:
+  rust:
+    build: .
+    restart: always
+    environment:
+      - USER='User'
+    volumes:
+      - ./work:/work
+    tty: true
+    privileged: true
